@@ -1,2 +1,1 @@
-grails-ant-resources-example
-============================
+Example app for blog post. This app doesn't have any functionality, it just demonstrates the code from the blog post.
