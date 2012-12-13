@@ -25,14 +25,11 @@ class BootStrap {
             watcher.addListener(listener)
 
             ['/css', '/js', '/templates'].each { String path ->
-                path = path.replaceAll('\\\\', '/')
                 File dir = new File(servletContext.getRealPath(path))
                 watcher.addWatchDirectory(dir, '*')
             }
-
             watcher.start()
         }
-
     }
 
     def destroy = {
